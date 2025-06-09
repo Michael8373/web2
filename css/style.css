@@ -1,0 +1,186 @@
+/* Asgn12 Stylesheet */
+
+body {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    background-color: teal;
+}
+
+#a, #b, #c, #d{
+    background-color: teal;
+    z-index: 20;
+    border: 1px solid #111;
+    box-shadow: rgba(0,0,0,0.4) 0px 2px 4px,
+                rgba(0,0,0,0.3) 0px 7px 13 px -3px,
+                rgba(0,0,0,0.2) 0px -3px 0px inset;
+}
+
+
+#a {
+    grid-area: a;
+    padding: 20px;
+    gap: 25px;
+    img{
+        width:60px;
+        height:60px;
+        border-radius: 60%;
+        border: 3px solid black;
+        background-color:goldenrod;
+    }
+}
+
+#b {
+    grid-area: b;
+    padding: 10px;
+    ul li{
+        display: inline;
+        font-size: 1.5em;
+        padding: 25px;
+        font-variant: caps;
+        letter-spacing: 3px;
+        font-size: 0.7;
+    }
+    ul li a:link{
+        text-decoration: none;
+        color: white;
+    }
+    ul li a:visited{
+        text-decoration: none;
+        color: white;
+    }
+    ul li a:hover{
+        text-decoration: none;
+        color: goldenrod;
+    }
+    ul li a:active{
+        text-decoration: none;
+        color: white;
+    }
+}
+
+#c {
+    grid-area: c;
+    padding: 20px;
+    text-indent: 200px;
+}
+
+#d {
+    grid-area: d;
+    padding: 20px;
+    text-indent: 200px;
+}
+
+/*Classes*/
+
+.rmiddle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.cmiddle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("../images/insurance1.jpeg");
+  
+    /* Set a specific height */
+    min-height: 500px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax1 {
+    /* The image used */
+    background-image: url("../images/insuraance2.jpeg");
+  
+    /* Set a specific height */
+    min-height: 500px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .parallax2 {
+    /* The image used */
+    background-image: url("../images/insurance3.jpeg");
+  
+    /* Set a specific height */
+    min-height: 500px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .parallax3 {
+    /* The image used */
+    background-image: url("../images/insurance4.jpeg");
+  
+    /* Set a specific height */
+    min-height: 500px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
+/* Mobile Phones */
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+    .container {
+        padding: 10px;
+    }
+}
+
+/* Tablets */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 15px;
+    }
+}
+
+/* Laptops */
+@media screen and (max-width: 1024px) {
+    body {
+        font-size: 18px;
+    }
+    .container {
+        padding: 30px;
+    }
+}
+
+/* Desktops */
+@media screen and (min-width: 1025px) {
+    body {
+        font-size: 20px;
+    }
+    .container {
+        padding: 40px;
+    }
+}
